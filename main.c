@@ -32,8 +32,14 @@ int isPointInsidePentagon(double x, double y, double centerX, double centerY, do
             n++;
         }
     }
-
-    return (n % 2 == 1);
+    if (n % 2 == 1) 
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
 }
 
 // Функция для сравнения двух пентагонов по площади
